@@ -67,6 +67,7 @@ class Game:
             }
         }
         self.current_agent_color = None
+        self.last_agent_color = None
 
     def chat_to_agent_and_get_response(self, agent_color, message):
         session = self.agent_dict[agent_color]["session"]
@@ -84,11 +85,15 @@ class Game:
             case "blue":
                 self.current_agent_color = "blue"
             case "meet":
+                self.last_agent_color = self.current_agent_color
                 self.current_agent_color = "both"
             case "help":
                 self.print_game_text(Game.help_text_list)
             case _:
                 print("> Unrecognized command, say '!help' to see the command list.")
+
+    def handle_meet(self):
+        pass
 
     def rolling_chat(self):
         while True:
@@ -101,12 +106,17 @@ class Game:
                 self.run_command(message[1:])
                 continue
 
-            if self.current_agent_color is not None:
-                print(
-                    conversation_partner_name + ":",
-                    self.chat_to_agent_and_get_response(
-                        self.current_agent_color, message)
-                )
+            if self.current_agent_color is None:
+                continue
+
+            if self.current_agent_color == "both":
+                pass
+
+            print(
+                conversation_partner_name + ":",
+                self.chat_to_agent_and_get_response(
+                    self.current_agent_color, message)
+            )
 
     def print_game_text(self, text_list):
         for line in text_list:
