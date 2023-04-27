@@ -36,18 +36,26 @@ class Game:
     def run_command(self, command):
         match command:
             case "exit":
-                print("~~Thanks for playing~~")
+                print()
+                print(colored("        ~~ Thanks for playing ~~         ",
+                      "dark_grey", "on_white"))
+                print()
                 sys.exit()
             case "red":
                 self.current_agent_color = "red"
             case "blue":
                 self.current_agent_color = "blue"
             case "inv":
-                print("You have nothing in your inventory.")
+                print("> You have nothing in your inventory.")
+            case "help":
+                self.print_help_text()
+            case _:
+                print("> Unrecognized command, say '!help' to see the command list.")
 
     def rolling_chat(self):
-        conversation_partner_name = self.agent_dict[self.current_agent_color]["colored_name"]
         while True:
+            conversation_partner_name = self.agent_dict[self.current_agent_color]["colored_name"]
+            print()
             print("You (to {}): ".format(conversation_partner_name), end="")
             message = input()
 
@@ -64,6 +72,7 @@ class Game:
 
     def print_intro_text(self):
         intro_text = [
+            "                                         ",
             "  Welcome to Conflict Resolution Class!  ",
             "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
             "  Your goal is to resolve a conflict     ",
@@ -76,6 +85,12 @@ class Game:
             "  Chat with them, ask them questions     ",
             "  understand their differences, earn     ",
             "  their trust, and settle their beef.    ",
+        ]
+        for line in intro_text:
+            print(colored(line, "dark_grey", "on_white"))
+
+    def print_help_text(self):
+        help_text = [
             "                                         ",
             "  Useful Commands:                       ",
             "      !exit - Exits the game.            ",
@@ -86,19 +101,26 @@ class Game:
             colored("Blue", "blue", "on_white", attrs=['bold']) +
             colored(".             ", "dark_grey", "on_white"),
             "      !inv - Check your inventory.       ",
+            "      !help - See this command list.     ",
             "                                         ",
+        ]
+        for line in help_text:
+            print(colored(line, "dark_grey", "on_white"))
+
+    def print_good_luck_text(self):
+        good_luck_text = [
             colored("             🍀 Good Luck! 🍀            ",
                     "green", "on_white", attrs=["bold"]),
             "                                         ",
-
-
         ]
-        for line in intro_text:
+        for line in good_luck_text:
             print(colored(line, "dark_grey", "on_white"))
 
     def start_game(self):
         self.print_intro_text()
-        self.rolling_chat(None)
+        self.print_help_text()
+        self.print_good_luck_text()
+        self.rolling_chat()
 
 
 if __name__ == "__main__":
