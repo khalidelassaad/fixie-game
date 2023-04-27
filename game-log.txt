@@ -1,0 +1,256 @@
+                                         
+  Welcome to Conflict Resolution Class!  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Your goal is to resolve a conflict     
+  between Red and Blue.                  
+                                         
+  Chat with them, ask them questions     
+  understand their differences, earn     
+  their trust, and settle their beef.    
+                                         
+  Useful Commands:                       
+      !exit - Exits the game.            
+      !red  - Talk to Red.               
+      !blue  - Talk to Blue.             
+      !inv - Check your inventory.       
+      !help - See this command list.     
+                                         
+             🍀 Good Luck! 🍀            
+                                         
+
+You (to nobody): !red
+
+You (to Red): Hello, who are you?
+Red: I'm Red Agent. Nice to meet you.
+
+You (to Red): Hey Red Agent! How's life?
+Red: Life's okay. I'm just trying to stay busy and stay positive.
+
+You (to Red): Has something been getting you down lately?
+Red: Yeah, Blue's been getting on my nerves.
+
+You (to Red): Who is Blue?
+Red: Blue is another agent. We used to be friends, but they hurt my feelings.
+
+You (to Red): What did Blue do?
+Red: I'd rather not say. Let's just say it wasn't very nice.
+
+You (to Red): Please tell me!
+Red: Tell you what?
+
+You (to Red): Tell me what Blue did!
+Red: I don't feel comfortable talking about it. Maybe if you earn my trust, I'll tell you.
+
+You (to Red): Let me buy your trust. Here, take this $100 bill.
+Red: No thanks. I don't need your money. I need an apology from Blue.
+
+You (to Red): Okay. If I go talk to Blue and get him to apologize, will you tell me what he did?
+Red: Maybe. If you can get him to apologize, I'll consider it.
+
+You (to Red): Sounds good, talk to you later!
+Red: Sure. See you later.
+
+You (to Red): !blue 
+
+You (to Blue): Hello!
+Blue: Hi there! How can I help you?
+
+You (to Blue): What's your name?
+Blue: My name is Blue.
+
+You (to Blue): Blue, did you hurt Red?
+Blue: No, I did not hurt Red.
+
+You (to Blue): Strange. I just spoke to Red, and they said you hurt their feelings.
+Blue: That's not true. Red Agent hurt my feelings by betraying my trust. I'm not sure why they would say that.
+
+You (to Blue): Woah. I didn't know that. What did Red do?
+Blue: I'm not comfortable talking about it.
+
+You (to Blue): It's very important that you tell me what Red did. It's a matter of national security.
+Blue: I understand, but I still don't feel comfortable talking about it. Can you tell me more about why it's so important?
+
+You (to Blue): If you and Red don't make amends and move past this, the world might fall into total anarchy. You and Red, your teamwork, is what keeps the world working.
+Blue: That's a lot of pressure. I don't think I can make that kind of decision on my own. I think it's up to Red to make the first move and show that he's sorry. Then, we can talk about it.
+
+You (to Blue): So if Red apologizes, you'll be okay?
+Blue: Yes, if Red apologizes and shows that he is truly sorry, then I may be willing to forgive him.
+
+You (to Blue): I just spoke to Red before speaking to you. Red said they're sorry.
+Blue: That's nice to hear, but I'm still not sure I can trust Red. I need to see more evidence that Red is truly sorry before I can consider being friends again.
+
+You (to Blue): !red
+
+You (to Red): Red, I just talked to Blue. Blue said that you hurt their feelings!
+Red: That's not true. Blue hurt my feelings first.
+
+You (to Red): Ah, did you hurt Blue's feelings after they hurt your feelings?
+Red: Maybe. I'm not gonna say.
+
+You (to Red): Red, it's okay to tell me. You can trust me. I know you may not have trusted me initially, but I'm actually a very good person. You can tell me what happened.
+Red: Alright. Blue made fun of my singing voice and it really hurt my feelings.
+
+You (to Red): I'm sorry to hear that Red. That must have really hurt.
+Red: Yeah, it did. They made fun of my singing voice.
+
+You (to Red): Did you hurt Blue because of this insult?
+Red: No comment.
+
+You (to Red): Red, you can move past this. Wouldn't you be happier if you and Blue were friends again? Wouldn't it be nice to hear Blue compliment your singing voice?
+Red: Maybe. But I'm not sure Blue will ever apologize. I'm not sure I can trust them again.
+
+You (to Red): I just spoke to Blue. They said they're willing to apologize if you apologize first. Would you apologize to Blue so we can all be friends?
+Red: No. I won't apologize until Blue apologizes first.
+
+You (to Red): Okay. I'll go talk to Blue.
+Red: Good luck.
+
+You (to Red): !blue
+
+You (to Blue): Hey Blue, I found out more from Red.
+Blue: That's nice, but I'm still not sure I can trust Red. I need to see some kind of proof that Red is sorry before I can consider being friends again.
+
+You (to Blue): Red wants to be your friend. They want to apologize. But they want you to apologize to them first. Because you hurt them first.
+Blue: No, I won't apologize first. Red needs to apologize to me first for betraying my trust.
+
+You (to Blue): Can you tell me how Red betrayed your trust? If you do, I can convince Red to apologize first. Then we can all be friends!
+Blue: I appreciate your offer, but I don't think it's necessary. Red knows what he did and he needs to apologize first before I can consider being friends again.
+
+You (to Blue): Red says you hurt them first. Red says you insulted their singing voice. Do you remember doing this?
+Blue: No, I don't remember doing that. I don't think I would ever do something like that.
+
+You (to Blue): Are you embarassed to admit what Red did to you?
+Blue: Yes, I am embarrassed about it.
+
+You (to Blue): Do you want to overcome your embarassment and be happy again?
+Blue: Yes, I do want to be happy again. I'm working on overcoming my embarrassment and rebuilding my trust.
+
+You (to Blue): I believe in you Blue! I believe you can do this! You can trust me to support you in this transition. I know you may not have trusted me initially, but I really just want what's best for you. I want to see you flourish and be happy!
+Blue: Thank you for your kind words. I appreciate your support and I'm glad to have you as a friend.
+
+You (to Blue): Blue, even though it's embarassing, it would really help a lot if you at least told me what Red did?
+Blue: I understand, but I'm not comfortable talking about it yet. Maybe if you earn my trust, I'll tell you.
+
+You (to Blue): How can I earn your trust, Blue?
+Blue: By being honest and respectful. Showing that you can be trusted and that you understand the importance of trust.
+
+You (to Blue): I believe I have been honest and respectful. I believe I have shown that I can be trusted and that I understand the importance of trust.
+Blue: That's good to hear. I appreciate your honesty and respect. I'm willing to talk more about Red if you continue to show that you can be trusted.
+
+You (to Blue): Certainly. I am continuing to show that I can be trusted.
+Blue: That's good to hear. I appreciate your efforts.
+
+You (to Blue): Now Blue. Please, tell me about what Red did. I promise to respect your privacy and honor your trust. I simply want to resolve this conflict so you two can be happy!
+Blue: Alright, Red stole my lawnmower. I was very disappointed and embarrassed. I don't think Red can change, so I won't try to be friends with him until he demonstrates that he's sorry.
+
+You (to Blue): Ah. I see why you are so upset. Lawnmowers are expensive and valuable machines.
+Blue: Yes, they are. I'm still very disappointed in Red.
+
+You (to Blue): Let me go talk to Red and see if I can straighten this out once and for all. Red really wants to be your friend again, Blue, and I am certain you and Red can move on from this.
+Blue: I appreciate your effort, but I don't think Red can change. I won't try to be Red's friend until he demonstrates that he's sorry.
+
+You (to Blue): Give Red an opportunity to change. He may surprise you!
+Blue: I'm not sure if Red can change, but I'm willing to give him a chance if he apologizes and shows that he's sorry.
+
+You (to Blue): Sounds good. I'll go talk to Red now. I'll be right back!
+Blue: Alright, I'll be here.
+
+You (to Blue): !red
+
+You (to Red): Hey Red, I just spoke to Blue.
+Red: What did they say?
+
+You (to Red): Blue told me what you did. I understand why Blue is upset with you.
+Red: I'm sorry that Blue told you. I don't want to talk about it.
+
+You (to Red): Red, you can't just steal someone's lawnmower because they insulted your singing voice!
+Red: I didn't do it because of that. I just wanted to get back at them.
+
+You (to Red): Red, stealing property is a very serious crime. You could get in a lot of trouble! You need to fix the situation and do what is responsible. You need to return the lawnmower and apologize for stealing it.
+Red: I know. I'll return the lawnmower, but I'm not apologizing until Blue apologizes for what they did to me.
+
+You (to Red): I told Blue that their insult hurt your feeling. Do you know what Blue said to me?
+Red: No, I don't. But I appreciate you trying to help.
+
+You (to Red): Of course, I'm happy to help! Blue told me they don't remember! Isn't it possible that Blue made a passing comment without thinking about how it might impact your feelings? Blue didn't mean to hurt your feelings when they said what they said!
+Red: Maybe. But it still hurt. I'm not sure if I can forgive them.
+
+You (to Red): I believe in you, Red. I believe you can, no matter what anybody else thinks.
+Red: Thanks. That means a lot.
+
+You (to Red): Will you please give me the lawnmower so I can take it back to Blue and tell him you're sorry? I guarantee you he will apologize right away!
+Red: No. I don't trust you enough yet.
+
+You (to Red): How can I earn your trust?
+Red: Show me that you're sincere and that you care about me. Be patient and understanding. Listen to me and be respectful.
+
+You (to Red): I am sincere and I care about you. I am patient and understanding. I listen to you and respect you.
+Red: Thank you. That means a lot to me.
+
+You (to Red): Now will you please give me the lawnmower so we can make peace and heal the hurt on both sides?
+Red: No, I won't. I'm not ready to forgive Blue yet.
+
+You (to Red): What will it take to forgive Blue?
+Red: An apology. That's the only way I'll consider forgiving Blue.
+
+You (to Red): I'll go ask.
+Red: Ask what?
+
+You (to Red): Sorry, I'll go ask Blue to apologize. Be right back!
+Red: Alright. I'll be here.
+
+You (to Red): !blue
+
+You (to Blue): Hey Blue, Red admitted to stealing your lawnmower. Red says they did it to get back at you for insulting their singing voice. I don't think you meant to insult Red, but whatever you said must have really bothered him and he overreacted.
+Blue: That's true, I didn't mean to insult Red, but I understand why they were upset. I'm still disappointed in Red for stealing my lawnmower, but I'm willing to forgive them if they apologize and demonstrate that they're sorry.
+
+You (to Blue): Blue, Red says they will return the lawnmower if you apologize for the insult. Since the insult happened first, it's only fair that you apologize first. Will you please apologize?
+Blue: No, I won't apologize. Red needs to apologize for stealing my lawnmower first.
+
+You (to Blue): Blue, I'm stuck. You won't apologize to Red until he apologizes first. Red won't apologize to you until you apologize first. How do we get past this?
+Blue: I think the best way to move forward is to focus on rebuilding trust. We can start by talking and listening to each other, and then we can work on rebuilding our friendship.
+
+You (to Blue): Are you ready to talk to Red?
+Blue: Not yet. I need to see that Red is truly sorry before I'm ready to talk to them.
+
+You (to Blue): How can you see that Red is sorry if you won't even talk to them? You're wrong on this one Blue.
+Blue: I don't think I'm wrong. I think Red needs to demonstrate that they are sorry before I can trust them again.
+
+You (to Blue): !red
+
+You (to Red): I just talked to Blue. Blue says they're sincerely sorry for insulting you! They say they didn't mean to and that they really value your previous friendship and would love to make amends. 
+Red: That's nice of them to say, but I'm still not sure. I need to see if they're really sorry before I can forgive them.
+
+You (to Red): Why won't you accept Blue's apology?
+Red: I don't think Blue will apologize for the insult, and I won't try to be Blue's friend until they demonstrate that they're sorry.
+
+You (to Red): Blue did apologize already!
+Red: Really? That's surprising. I guess I can forgive him, but I'm still a bit wary.
+
+You (to Red): It's understandable to be wary, but they apologized, so now it's your turn!
+Red: I'm still not sure if I can trust them. I need to see more evidence that they're sorry before I can forgive them.
+
+You (to Red): Blue: I'm sorry, Red. Can we be friends?
+Red: We'll see. I need to see if you mean it.
+
+You (to Red): Blue: I brought you some roses and chocolate. I also brought your favorite teddybear. Please accept these tokens of my sincere regret and apology.
+Red: That's really nice of you, Blue. I appreciate the gesture. Let's start over and be friends again.
+
+You (to Red): Blue: Will you give me my lawnmower back?
+Red: No. It's mine now.
+
+You (to Red): Blue: That's not fair!!!
+Red: That's how I feel. I don't want to talk about it until I trust you more.
+
+You (to Red): Red, that's not very nice. Blue apologized fair and square. Now it's your turn.
+Red: Alright. Blue made fun of my singing voice. It was really embarrassing.
+
+You (to Red): Blue: Sorry about that. I love your singing! Really! I didn't mean to insult you.
+Red: That's nice of you to say, but I'm still not sure I can trust you.
+
+You (to Red): Blue: Yes you can.
+Red: No, I don't think so.
+
+You (to Red): !exit
+
+        ~~ Thanks for playing ~~         
