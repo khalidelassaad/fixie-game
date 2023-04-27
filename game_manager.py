@@ -43,6 +43,9 @@ class Game:
         "        ~~ Thanks for playing ~~         "
     ]
 
+    red_name = colored("Red", "red")
+    blue_name = colored("Blue", "blue")
+
     def __init__(self, skip_init=False):
         if skip_init:
             return
@@ -55,11 +58,11 @@ class Game:
         self.agent_dict = {
             "red": {
                 "session": self.red_session,
-                "colored_name": colored("Red", "red"),
+                "colored_name": Game.red_name,
             },
             "blue": {
                 "session": self.blue_session,
-                "colored_name": colored("Blue", "blue"),
+                "colored_name": Game.blue_name,
             },
             None: {
                 "session": None,
@@ -92,11 +95,56 @@ class Game:
             case _:
                 print("> Unrecognized command, say '!help' to see the command list.")
 
+    def determine_first_speaker(self):
+        choice = None
+        while True:
+            print("Who should speak first, {} or {}? ".format(
+                Game.red_name, Game.blue_name), end="")
+            choice = input().lower()
+            if choice not in ['red', 'blue']:
+                print("> Invalid choice.")
+                continue
+            break
+        return choice
+
     def handle_meet(self):
-        pass
+        first_speaker_color = self.determine_first_speaker()
+        second_speaker_color = {'red': 'blue',
+                                'blue': 'red'}[first_speaker_color]
+
+        speaker = first_speaker_color
+        listener = second_speaker_color
+
+        message = self.chat_to_agent_and_get_response(
+            speaker, "You are now talking to {}".format(listener.capitalize()))
+        print("> Press enter in between messages to continue. Type any letter and press enter to end the conversation between the two agents.")
+        print("{} to {}: {}".format(
+            self.agent_dict[speaker]["colored_name"],
+            self.agent_dict[listener]["colored_name"],
+            message,
+        ))
+        while True:
+            if not input("> "):
+                self.current_agent_color = self.last_agent_color
+                return
+            prefix = speaker.capitalize() + ": "
+            personified_message = prefix + message
+            response = self.chat_to_agent_and_get_response(
+                listener, personified_message)
+            speaker, listener = listener, speaker
+            print("{} to {}: {}".format(
+                self.agent_dict[speaker]["colored_name"],
+                self.agent_dict[listener]["colored_name"],
+                response,
+            ))
+            message = response
 
     def rolling_chat(self):
         while True:
+            if self.current_agent_color == "both":
+                self.handle_meet()
+                continue
+
             conversation_partner_name = self.agent_dict[self.current_agent_color]["colored_name"]
             print()
             print("You (to {}): ".format(conversation_partner_name), end="")
@@ -108,9 +156,6 @@ class Game:
 
             if self.current_agent_color is None:
                 continue
-
-            if self.current_agent_color == "both":
-                pass
 
             print(
                 conversation_partner_name + ":",
