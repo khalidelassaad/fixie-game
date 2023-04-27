@@ -16,29 +16,51 @@ class Game:
         self.agent_dict = {
             "red": {
                 "session": self.red_session,
-                "chat_prefix": colored("Red:", "red"),
+                "colored_name": colored("Red", "red"),
             },
             "blue": {
                 "session": self.blue_session,
-                "chat_prefix": colored("Blue:", "blue"),
+                "colored_name": colored("Blue", "blue"),
             },
+            None: {
+                "session": None,
+                "colored_name": "nobody"
+            }
         }
+        self.current_agent_color = None
 
     def chat_to_agent_and_get_response(self, agent_color, message):
         session = self.agent_dict[agent_color]["session"]
         return agent_api.say_to_session_and_get_text_response(session, message)
 
-    def rolling_chat(self, agent_color):
-        while True:
-            print("You: ", end="")
-            message = input()
-            if message == "exit":
+    def run_command(self, command):
+        match command:
+            case "exit":
                 print("~~Thanks for playing~~")
                 sys.exit()
-            print(
-                self.agent_dict[agent_color]["chat_prefix"],
-                self.chat_to_agent_and_get_response(agent_color, message)
-            )
+            case "red":
+                self.current_agent_color = "red"
+            case "blue":
+                self.current_agent_color = "blue"
+            case "inv":
+                print("You have nothing in your inventory.")
+
+    def rolling_chat(self):
+        conversation_partner_name = self.agent_dict[self.current_agent_color]["colored_name"]
+        while True:
+            print("You (to {}): ".format(conversation_partner_name), end="")
+            message = input()
+
+            if message[0] == "!":
+                self.run_command(message[1:])
+                continue
+
+            if self.current_agent_color is not None:
+                print(
+                    conversation_partner_name + ":",
+                    self.chat_to_agent_and_get_response(
+                        self.current_agent_color, message)
+                )
 
     def print_intro_text(self):
         intro_text = [
@@ -76,8 +98,9 @@ class Game:
 
     def start_game(self):
         self.print_intro_text()
+        self.rolling_chat(None)
 
 
 if __name__ == "__main__":
-    game = Game(skip_init=True)
+    game = Game()
     game.start_game()
