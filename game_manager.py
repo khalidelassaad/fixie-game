@@ -1,5 +1,6 @@
 import agent_api
 import sys
+from termcolor import colored
 
 
 class Game:
@@ -13,11 +14,11 @@ class Game:
         self.agent_dict = {
             "red": {
                 "session": self.red_session,
-                "chat_prefix": "Red:",
+                "chat_prefix": colored("Red:", "red"),
             },
             "blue": {
                 "session": self.blue_session,
-                "chat_prefix": "Blue:",
+                "chat_prefix": colored("Blue:", "blue"),
             },
         }
 
@@ -27,18 +28,15 @@ class Game:
 
     def rolling_chat(self, agent_color):
         while True:
-            try:
-                print("Me: ", end="")
-                message = input()
-                if message == "exit":
-                    return
-                print(
-                    self.agent_dict[agent_color]["chat_prefix"],
-                    self.chat_to_agent_and_get_response(agent_color, message)
-                )
-            except KeyboardInterrupt:
+            print("You: ", end="")
+            message = input()
+            if message == "exit":
                 print("~~Thanks for playing~~")
                 sys.exit()
+            print(
+                self.agent_dict[agent_color]["chat_prefix"],
+                self.chat_to_agent_and_get_response(agent_color, message)
+            )
 
 
 if __name__ == "__main__":
