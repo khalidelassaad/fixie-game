@@ -1,4 +1,4 @@
 handle: red-agent
 description: I'm angry at blue-agent
 more_info_url: ''
-entry_point: main:agent
+entry_point: main_red:agent

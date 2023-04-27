@@ -1,10 +1,4 @@
-"""A templated Fixie agent!
-
-Fixie docs:
-    https://docs.fixie.ai
-
-Fixie agent example:
-    https://github.com/fixie-ai/fixie-examples
+"""Red agent is angry at Blue agent.
 """
 
 import fixieai

@@ -1,4 +1,4 @@
 handle: blue-agent
 description: I'm disappointed in red-agent
 more_info_url: ''
-entry_point: main:agent
+entry_point: main_blue:agent
