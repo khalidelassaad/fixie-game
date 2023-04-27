@@ -116,15 +116,17 @@ class Game:
         listener = second_speaker_color
 
         message = self.chat_to_agent_and_get_response(
-            speaker, "You are now talking to {}".format(listener.capitalize()))
+            speaker, "{}: Hello, {}.".format(speaker.capitalize(), listener.capitalize()))
+        print()
         print("> Press enter in between messages to continue. Type any letter and press enter to end the conversation between the two agents.")
+        print()
         print("{} to {}: {}".format(
             self.agent_dict[speaker]["colored_name"],
             self.agent_dict[listener]["colored_name"],
             message,
         ))
         while True:
-            if not input("> "):
+            if input("> ") != '':
                 self.current_agent_color = self.last_agent_color
                 return
             prefix = speaker.capitalize() + ": "
