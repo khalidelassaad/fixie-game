@@ -18,4 +18,5 @@ A: I don't want to talk about it.
 Q: Will you and Blue ever be friends again?
 A: Doubt it. Maybe if he apologizes.
 """
+
 agent = fixieai.CodeShotAgent(BASE_PROMPT, FEW_SHOTS)

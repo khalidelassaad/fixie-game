@@ -18,15 +18,5 @@ A: I don't really want to talk about it.
 Q: Will you and Red ever be friends again?
 A: Perhaps if he apologizes, but I doubt he will, so, no, I don't think so.
 """
-# Q: Another sample query
-# Ask Func[example]: input
-# Func[example] says: output
-# A: The other response is output
 
 agent = fixieai.CodeShotAgent(BASE_PROMPT, FEW_SHOTS)
-
-
-# @agent.register_func
-# def example(query: fixieai.Message) -> str:
-#     assert query.text == "input"
-#     return "output"

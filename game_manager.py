@@ -26,10 +26,11 @@ class Game:
         "      !red  - Talk to " +
         colored("Red", "red", "on_white", attrs=['bold']) +
         colored(".               ", "dark_grey", "on_white"),
-        "      !blue  - Talk to " +
+        "      !blue - Talk to " +
         colored("Blue", "blue", "on_white", attrs=['bold']) +
-        colored(".             ", "dark_grey", "on_white"),
-        "      !inv - Check your inventory.       ",
+        colored(".              ", "dark_grey", "on_white"),
+        "      !meet - Make the agents chat with  ",
+        "              each other.                ",
         "      !help - See this command list.     ",
         "                                         ",
     ]
@@ -82,8 +83,8 @@ class Game:
                 self.current_agent_color = "red"
             case "blue":
                 self.current_agent_color = "blue"
-            case "inv":
-                print("> You have nothing in your inventory.")
+            case "meet":
+                self.current_agent_color = "both"
             case "help":
                 self.print_game_text(Game.help_text_list)
             case _:
