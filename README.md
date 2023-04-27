@@ -6,3 +6,5 @@ Requires Python >= 3.10
 `pip install -r requirements.txt`
 
 Use pyvenv!
+
+https://docs.fixie.ai/python-client-api/
