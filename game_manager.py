@@ -162,7 +162,7 @@ class Game:
             print(
                 conversation_partner_name + ":",
                 self.chat_to_agent_and_get_response(
-                    self.current_agent_color, message)
+                    self.current_agent_color, "Player: " + message)
             )
 
     def print_game_text(self, text_list):
