@@ -1,0 +1,4 @@
+handle: myagent
+description: A simple test agent
+more_info_url: ''
+entry_point: main:agent
