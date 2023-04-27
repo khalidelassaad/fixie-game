@@ -4,6 +4,42 @@ from termcolor import colored
 
 
 class Game:
+
+    intro_text_list = [
+        "                                         ",
+        "  Welcome to Conflict Resolution Class!  ",
+        "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+        "  Your goal is to resolve a conflict     ",
+        "  between " +
+        colored("Red", "red", "on_white", attrs=['bold']) +
+        colored(" and ", "dark_grey", "on_white") +
+        colored("Blue", "blue", "on_white", attrs=['bold']) +
+        colored(".                  ", "dark_grey", "on_white"),
+        "                                         ",
+        "  Chat with them, ask them questions     ",
+        "  understand their differences, earn     ",
+        "  their trust, and settle their beef.    ",
+    ]
+    help_text_list = [
+        "                                         ",
+        "  Useful Commands:                       ",
+        "      !exit - Exits the game.            ",
+        "      !red  - Talk to " +
+        colored("Red", "red", "on_white", attrs=['bold']) +
+        colored(".               ", "dark_grey", "on_white"),
+        "      !blue  - Talk to " +
+        colored("Blue", "blue", "on_white", attrs=['bold']) +
+        colored(".             ", "dark_grey", "on_white"),
+        "      !inv - Check your inventory.       ",
+        "      !help - See this command list.     ",
+        "                                         ",
+    ]
+    good_luck_text_list = [
+        colored("             🍀 Good Luck! 🍀            ",
+                "green", "on_white", attrs=["bold"]),
+        "                                         ",
+    ]
+
     def __init__(self, skip_init=False):
         if skip_init:
             return
@@ -48,7 +84,7 @@ class Game:
             case "inv":
                 print("> You have nothing in your inventory.")
             case "help":
-                self.print_help_text()
+                self.print_game_text(Game.help_text_list)
             case _:
                 print("> Unrecognized command, say '!help' to see the command list.")
 
@@ -70,56 +106,14 @@ class Game:
                         self.current_agent_color, message)
                 )
 
-    def print_intro_text(self):
-        intro_text = [
-            "                                         ",
-            "  Welcome to Conflict Resolution Class!  ",
-            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
-            "  Your goal is to resolve a conflict     ",
-            "  between " +
-            colored("Red", "red", "on_white", attrs=['bold']) +
-            colored(" and ", "dark_grey", "on_white") +
-            colored("Blue", "blue", "on_white", attrs=['bold']) +
-            colored(".                  ", "dark_grey", "on_white"),
-            "                                         ",
-            "  Chat with them, ask them questions     ",
-            "  understand their differences, earn     ",
-            "  their trust, and settle their beef.    ",
-        ]
-        for line in intro_text:
-            print(colored(line, "dark_grey", "on_white"))
-
-    def print_help_text(self):
-        help_text = [
-            "                                         ",
-            "  Useful Commands:                       ",
-            "      !exit - Exits the game.            ",
-            "      !red  - Talk to " +
-            colored("Red", "red", "on_white", attrs=['bold']) +
-            colored(".               ", "dark_grey", "on_white"),
-            "      !blue  - Talk to " +
-            colored("Blue", "blue", "on_white", attrs=['bold']) +
-            colored(".             ", "dark_grey", "on_white"),
-            "      !inv - Check your inventory.       ",
-            "      !help - See this command list.     ",
-            "                                         ",
-        ]
-        for line in help_text:
-            print(colored(line, "dark_grey", "on_white"))
-
-    def print_good_luck_text(self):
-        good_luck_text = [
-            colored("             🍀 Good Luck! 🍀            ",
-                    "green", "on_white", attrs=["bold"]),
-            "                                         ",
-        ]
-        for line in good_luck_text:
+    def print_game_text(self, text_list):
+        for line in text_list:
             print(colored(line, "dark_grey", "on_white"))
 
     def start_game(self):
-        self.print_intro_text()
-        self.print_help_text()
-        self.print_good_luck_text()
+        self.print_game_text(Game.intro_text_list)
+        self.print_game_text(Game.help_text_list)
+        self.print_game_text(Game.good_luck_text_list)
         self.rolling_chat()
 
 
