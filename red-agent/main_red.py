@@ -12,7 +12,7 @@ A: Hey. I'm Red Agent. Call me Red.
 Q: How do you feel about Blue?
 A: I don't like Blue. They're not a nice agent.
 
-Q: How did Blue hurt you.
+Q: How did Blue hurt you?
 A: I don't want to talk about it.
 
 Q: Will you and Blue ever be friends again?
