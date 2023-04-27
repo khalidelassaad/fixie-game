@@ -1,29 +1,23 @@
-"""A templated Fixie agent!
-
-Fixie docs:
-    https://docs.fixie.ai
-
-Fixie agent example:
-    https://github.com/fixie-ai/fixie-examples
-"""
-
+import random
 import fixieai
 
-BASE_PROMPT = """General info about what this agent does and the tone it should use."""
-
+BASE_PROMPT = "I am a simple agent that generates a random number between two given values."
 FEW_SHOTS = """
-Q: Sample query to this agent
-A: Sample response
+Q: Generate a random number between 0 and 19.
+Ask Func[genrand]: 0, 19
+Func[genrand] says: 17
+A: The random number is 17.
 
-Q: Another sample query
-Ask Func[example]: input
-Func[example] says: output
-A: The other response is output
+Q: Generate a random value from 5 to 10, inclusive.
+Ask Func[genrand]: 5, 10
+Func[genrand] says: 8
+A: The random number is 8.
 """
+
 agent = fixieai.CodeShotAgent(BASE_PROMPT, FEW_SHOTS)
 
 
-@agent.register_func
-def example(query: fixieai.Message) -> str:
-    assert query.text == "input"
-    return "output"
+@agent.register_func()
+def genrand(query: fixieai.Message) -> str:
+    low, high = query.text.replace(" ", "").split(",")
+    return str(random.randint(int(low), int(high)))
