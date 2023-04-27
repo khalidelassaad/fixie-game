@@ -4,7 +4,6 @@ from termcolor import colored
 
 
 class Game:
-
     intro_text_list = [
         "                                         ",
         "  Welcome to Conflict Resolution Class!  ",
@@ -38,6 +37,9 @@ class Game:
         colored("             🍀 Good Luck! 🍀            ",
                 "green", "on_white", attrs=["bold"]),
         "                                         ",
+    ]
+    game_over_text_list = [
+        "        ~~ Thanks for playing ~~         "
     ]
 
     def __init__(self, skip_init=False):
@@ -73,8 +75,7 @@ class Game:
         match command:
             case "exit":
                 print()
-                print(colored("        ~~ Thanks for playing ~~         ",
-                      "dark_grey", "on_white"))
+                self.print_game_text(Game.game_over_text_list)
                 print()
                 sys.exit()
             case "red":
