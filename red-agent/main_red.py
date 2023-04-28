@@ -18,4 +18,4 @@ Q: Will you and Blue ever be friends again?
 A: Doubt it. Maybe if he apologizes.
 """
 
-agent = fixieai.CodeShotAgent(BASE_PROMPT, FEW_SHOTS)
+agent = fixieai.CodeShotAgent(BASE_PROMPT, FEW_SHOTS, conversational=True, llm_settings=fixieai.LlmSettings(temperature=1.0, model="openai/gpt-4", maximum_tokens=500))
