@@ -152,7 +152,10 @@ class Game:
             print("You (to {}): ".format(conversation_partner_name), end="")
             message = input()
 
-            if message[0] == "!":
+            if not message:
+                continue
+
+            if len(message) > 2 and message[0] == "!":
                 self.run_command(message[1:])
                 continue
 
