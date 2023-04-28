@@ -116,7 +116,7 @@ class Game:
         listener = second_speaker_color
 
         message = self.chat_to_agent_and_get_response(
-            speaker, "{}: Hello, {}.".format(speaker.capitalize(), listener.capitalize()))
+            speaker, "{}: Hello, {}.".format(listener.capitalize(), speaker.capitalize()))
         print()
         print("> Press enter in between messages to continue. Type any letter and press enter to end the conversation between the two agents.")
         print()
