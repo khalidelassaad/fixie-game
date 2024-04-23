@@ -1,5 +1,4 @@
 import dotenv
-import json
 import fixieai
 
 FIXIE_API_KEY = dotenv.dotenv_values(
