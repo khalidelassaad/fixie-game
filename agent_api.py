@@ -20,11 +20,11 @@ def get_session_handle(session):
 
 
 def say_to_session_and_get_text_response(session, message):
-    session.add_message(message)
+    session.query(message)
     return session.get_messages()[-1]['text']
 
 
 if __name__ == "__main__":
-    session = create_session("myagent")
+    session = create_session("red-agent")
     print(say_to_session_and_get_text_response(
         session, "Generate a number between 10 and 1000"))
